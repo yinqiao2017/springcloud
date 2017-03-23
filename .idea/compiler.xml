@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="compute-service (2)" />
+        <module name="config-server" />
+        <module name="eureka-feign" />
+        <module name="eureka-ribbon" />
+        <module name="eureka-server" />
+        <module name="service-a1" />
+      </profile>
+      <profile name="Annotation profile for spring-cloud" enabled="true">
+        <sourceOutputDir name="../service-a2/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../service-a2/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="compute-service (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
+      <module name="compute-service" target="1.6" />
+      <module name="compute-service (1)" target="1.6" />
+      <module name="compute-service (2)" target="1.6" />
+      <module name="config-server" target="1.6" />
+      <module name="eureka-feign" target="1.6" />
+      <module name="eureka-ribbon" target="1.6" />
+      <module name="eureka-server" target="1.6" />
+      <module name="service-a1" target="1.6" />
+      <module name="spring-cloud" target="1.5" />
+      <module name="spring-cloud-core" target="1.5" />
+      <module name="sql-server" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
