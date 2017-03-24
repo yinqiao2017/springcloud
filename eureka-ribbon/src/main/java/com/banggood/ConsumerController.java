@@ -15,7 +15,7 @@ public class ConsumerController {
     @Autowired
     private ComputeService computeService;
 
-    @RequestMapping(value = "/add", method= RequestMethod.GET)
+    @RequestMapping(value = "/goods", method= RequestMethod.GET)
     public String add(){
         return computeService.addService();
     }

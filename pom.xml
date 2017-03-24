@@ -14,7 +14,7 @@
         <module>eureka-feign</module>
         <module>eureka-ribbon</module>
         <module>eureka-server</module>
-        <module>service-a1</module>
-        <module>service-a2</module>
+        <module>goods-service1</module>
+        <module>goods-service2</module>
     </modules>
 </project>

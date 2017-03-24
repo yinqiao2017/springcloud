@@ -5,11 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2017/3/20.
  */
 @FeignClient(value = "compute-service", fallback = ComputeClientHystrix.class)
 public interface ComputeClient {
-    @RequestMapping(value = "/add", method = RequestMethod.GET)
-    Integer add(@RequestParam(value = "a") Integer a, @RequestParam(value = "b") Integer b);
+    @RequestMapping(value = "/goods", method = RequestMethod.GET)
+    List<Goods> selectAll();
 }

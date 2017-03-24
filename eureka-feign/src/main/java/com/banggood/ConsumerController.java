@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2017/3/20.
  */
@@ -14,8 +16,8 @@ public class ConsumerController {
     @Autowired
     ComputeClient computeClient;
 
-    @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public Integer add() {
-        return computeClient.add(10, 20);
+    @RequestMapping(value = "/goods", method = RequestMethod.GET)
+    public List<Goods> selectAll() {
+        return computeClient.selectAll();
     }
 }
