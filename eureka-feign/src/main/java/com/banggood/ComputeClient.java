@@ -12,6 +12,7 @@ import java.util.List;
  */
 @FeignClient(value = "compute-service", fallback = ComputeClientHystrix.class)
 public interface ComputeClient {
-    @RequestMapping(value = "/goods", method = RequestMethod.GET)
+
+    @RequestMapping(method = RequestMethod.GET, value = "/goods")
     List<Goods> selectAll();
 }
